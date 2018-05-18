@@ -8,9 +8,6 @@ A simple encryption behaviour for encrypting and decrypting database fields on Y
 Add the following to your composer file and run `composer update`
 
 ```json
-    "repositories": [
-        { "type": "vcs", "url": "https://github.com/maxcrossan/yii_encryption.git" }
-    ],
     "require": {
         "maxcrossan/yii_encryption": "dev-master"
     },
