@@ -9,11 +9,6 @@
         "yiisoft/yii": "^1"
     },
     "license": "MIT",
-    "autoload": {
-        "psr-0": {
-            "Crossan": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Max Crossan",

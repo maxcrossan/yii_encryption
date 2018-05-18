@@ -1,7 +1,5 @@
 <?php
 
-namespace Crossan;
-
 /**
  * Class EncryptionBehaviour
  * @Author Max Crossan
