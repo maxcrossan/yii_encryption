@@ -54,4 +54,4 @@ Any encrypted database columns are best setup with the BLOB db type
 
 ## Troubleshooting
 
-If you have problems loading the class inside your models you may need to setup an alias for vendor in main.php and reference it like so `vendor.maxcrossan.yii_encryption.src.EncryptionBehaviour`
+If you have problems loading the class inside your models you may need to setup an alias for vendor in main.php, something like ` Yii::setPathOfAlias('vendor',dirname(__FILE__).'/../../vendor/');` and then reference the EncryptionBehaviour as `vendor.maxcrossan.yii_encryption.src.EncryptionBehaviour`
