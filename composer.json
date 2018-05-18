@@ -1,21 +1,18 @@
 {
     "name": "maxcrossan/yii_encryption",
-    "description": "A simple encryption behaviour for encrypting and decrypting database fields on YIi models",
-    "version": "1",
-    "license": "MIT",
+    "type": "library",
     "require": {
-        "php": ">=5.3",
-        "yiisoft/yii": "1.*"
+        "yiisoft/yii": "1"
     },
-    "autoload": {
-        "psr-4": { "": "." }
+    "require-dev": {
+        "yiisoft/yii": "1"
     },
-    "homepage": "https://github.com/maxcrossan/yii_encryption",
-    "authors": [ 
+    "license": "MIT",
+    "authors": [
         {
             "name": "Max Crossan",
             "email": "max@crossan.com"
         }
-    ]
-
+    ],
+    "minimum-stability": "stable"
 }
