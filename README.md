@@ -4,9 +4,9 @@ Encryption Behaviour for Yii
 A simple encryption behaviour for encrypting and decrypting database fields on Yii models.
 After implementation fields configured for encryption will be encrypted the next time the model is saved.
 
-## Installing the behaviour
+## Installation
 
-Add the following to your composer file and run `php composer.phar update` or simply run `composer require maxcrossan/yii_encryption`
+Add the following to your composer file and run `php composer.phar update` or run `composer require maxcrossan/yii_encryption`
 
 ```json
     "require": {
@@ -20,8 +20,8 @@ Configure the Yii securityManger component in protected/config/main.php
     'components'=>array(
         'securityManager'=>array(
             'cryptAlgorithm' => 'rijndael-128',
-            'encryptionKey' => 'your-encryption-key',
-        ),
+            'encryptionKey' => 'your-encryption-key'
+        )
     )
 ```
 
@@ -42,9 +42,16 @@ Simply add the following to your model behaviours along with the database column
                     'city',
                     'postcode',
                     'emailAddress',
-                    'phone',
+                    'phone'
                 )
             )
-        );
+        )
     }
 ```
+
+Any encrypted database columns are best setup with the BLOB db type
+
+
+## Troubleshooting
+
+If you have problems loading the class inside your models you may need to setup an alias for vendor in main.php and reference it like so `vendor.maxcrossan.yii_encryption.src.EncryptionBehaviour`

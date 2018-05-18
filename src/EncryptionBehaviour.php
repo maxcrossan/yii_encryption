@@ -14,6 +14,10 @@ class EncryptionBehaviour extends CActiveRecordBehavior
         $this->_owner = $this->getOwner();
     }
 
+    /**
+     * @param CModelEvent $event
+     * @throws CException
+     */
     public function beforeSave($event) {
         foreach($this->encryptedFields as $encryptedField){
             //Protect against double encryption
@@ -22,6 +26,10 @@ class EncryptionBehaviour extends CActiveRecordBehavior
         }
     }
 
+    /**
+     * @param CEvent $event
+     * @throws CException
+     */
     public function afterSave($event){
         foreach($this->encryptedFields as $encryptedField){
             if($this->owner->{$encryptedField})
@@ -29,6 +37,10 @@ class EncryptionBehaviour extends CActiveRecordBehavior
         }
     }
 
+    /**
+     * @param CEvent $event
+     * @throws CException
+     */
     public function afterFind($event) {
         foreach($this->encryptedFields as $encryptedField){
             if ($this->owner->{$encryptedField} && @Yii::app()->getSecurityManager()->decrypt(base64_decode($this->owner->{$encryptedField})))
