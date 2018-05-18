@@ -1,7 +1,8 @@
 Encryption Behaviour for Yii
 ============================
 
-A simple encryption behaviour for encrypting and decrypting database fields on Yii models 
+A simple encryption behaviour for encrypting and decrypting database fields on Yii models.
+After implementation fields configured for encryption will be encrypted the next time the model is saved.
 
 ## Installing the behaviour
 
