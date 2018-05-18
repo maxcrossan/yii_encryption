@@ -5,7 +5,7 @@ A simple encryption behaviour for encrypting and decrypting database fields on Y
 
 ## Installing the behaviour
 
-Add the following to your composer file and run `composer update`
+Add the following to your composer file and run `php composer.phar update` or simply run `composer require maxcrossan/yii_encryption`
 
 ```json
     "require": {
@@ -13,7 +13,7 @@ Add the following to your composer file and run `composer update`
     },
 ```
 
-Configure the Yii securityManger component in main.php
+Configure the Yii securityManger component in protected/config/main.php
 
 ```php
     'components'=>array(
