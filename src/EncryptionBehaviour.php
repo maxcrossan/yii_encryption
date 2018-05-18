@@ -9,7 +9,6 @@ class EncryptionBehaviour extends CActiveRecordBehavior
     private $_owner;
     public $encryptedFields = array();
 
-
     public function __construct()
     {
         $this->_owner = $this->getOwner();
