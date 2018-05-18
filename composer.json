@@ -1,7 +1,7 @@
 {
     "name": "maxcrossan/yii_encryption",
     "description": "A simple encryption behaviour for encrypting and decrypting database fields on YIi models",
-    "version": "master",
+    "version": "1",
     "license": "MIT",
     "require": {
         "php": ">=5.3",
