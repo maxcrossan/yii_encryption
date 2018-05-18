@@ -14,5 +14,5 @@
             "email": "max@crossan.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
