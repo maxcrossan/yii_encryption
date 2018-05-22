@@ -6,7 +6,7 @@ After implementation fields configured for encryption will be encrypted the next
 
 ## Installation
 
-Add the following to your composer file and run `php composer.phar update` or run `composer require maxcrossan/yii_encryption`
+Add the following to your composer file and run `php composer.phar update`
 
 ```json
     "require": {
